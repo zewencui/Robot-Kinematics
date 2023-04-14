@@ -16,7 +16,7 @@ kd1 = 20;
 kd2 = 20;
 
 % 解ODE
-[t, q] = ode45(@twoLinkPlanner, time_span, initial_state);
+[t, q] = ode45(@twoLinkPlannerP1, time_span, initial_state);
 
 % 定义期望轨迹
 qd1 = pi/2 .* (t >= 0) - pi/2 .* (t >= 1);
